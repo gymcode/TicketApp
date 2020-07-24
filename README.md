@@ -1,5 +1,6 @@
 # TicketApp
-> This is a ticket application for purchasing ticket for matches
+> This is a ticket application for purchasing ticket for matches.
+
 __Note:__ the latest version of [node](https://nodejs.org/en/), [expo-cli](https://expo.io/), and expo client(Required on the mobile device)
 
 _TODOs_
