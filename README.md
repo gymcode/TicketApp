@@ -5,14 +5,19 @@
 * Both project must be open in separate VS code windows
 * The terminal must be used for all necesaary installations
 ```BASH
-ctrl + ` 
+ctrl + `          // this it to access the vs code terminal
 ```
 
 ## Installation  
 Node Packages must be installed first before proceeding(since we have both the server and client section, they'll be considered individually when setting them up)
 
 ### Client Section
-Install node packages first
+Install node packages first(either using npm or yarn
 ```BASH
 npm install
 ```
+or to use yarn
+```BASH
+yarn
+```
+
