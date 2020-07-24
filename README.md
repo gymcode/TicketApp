@@ -49,5 +49,9 @@ if __nodemon index__ does not work then nodemon has to be installed globally
 # to install nodemon 
 $ npm install -g nodemon
 ```
-
+#### testing the apis
+Example: to get all the players; this can be done
+```BASH
+ localhost:5000/players
+```
 
