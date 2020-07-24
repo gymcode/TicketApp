@@ -1,5 +1,8 @@
 # TicketApp
 > This is a ticket application for purchasing ticket for matches
+__Note:__ the latest version of [node](https://nodejs.org/en/), [expo-cli](https://expo.io/), and expo client(Required on the mobile device)
+
+_TODOs_
 * Clone the project before proceeding 
 * Must have a text editor preferrably Visual Studio(VS) code
 * Both project must be open in separate VS code windows
@@ -14,10 +17,10 @@ Node Packages must be installed first before proceeding(since we have both the s
 ### Client Section
 Install node packages first(either using npm or yarn
 ```BASH
-npm install
+$ npm install
 ```
 or to use yarn
 ```BASH
-yarn
+$ yarn
 ```
 
