@@ -56,7 +56,7 @@ Example: to get all the players; this can be done
 
 ## Running the application
 since the backend is already runnning, we can now start up the client section. 
-To do that we have to execute this command
+To do that, we have to execute this command
 ```BASH
 # to start up the client server
 $ expo start 
