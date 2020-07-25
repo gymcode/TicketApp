@@ -63,16 +63,18 @@ $ expo start
 ```
 scan the qr code with your mobile device to open the application. 
 
-__Note:__ In order to signup and login in to the application, the _ip address_ used must be changed to the __user's__ _ip address_.
-This link can be located in the directory: 
-> TicketApp/ticketApp_client/screens/login/login.js/ for Login and TicketApp/ticketApp_client/screens/signUp/signUp.js/ for Sign Up
+__Note:__ In order to signup and login using the application, the _ip address_ used must be changed to the __user's__ _ip address_.
+
+The link can be located in the directory: 
+> _TicketApp/ticketApp_client/screens/login/login.js/_ for __Login__ and _TicketApp/ticketApp_client/screens/signUp/signUp.js/_ for __Sign Up__
+
 Example: Default link for the Login is
 ```BASH
   http://172.20.10.3:5000/login
 ```
-But it must be changes to 
+But it must be changed to 
 ```BASH
   http://{user's ip address}:5000/login
 ```
-
+## THanK YoU 👍👌
 
