@@ -51,7 +51,16 @@ $ npm install -g nodemon
 ```
 #### testing the apis
 Example: to get all the players; this can be done
+
+> localhost:5000/favteam/players
+
+## Running the application
+since the backend is already runnning, we can now start up the client section 
+To do that we have to execute this command
 ```BASH
- localhost:5000/players
+# to start up the client server
+$ expo start 
 ```
+scan the qr code with your mobile device to open the application
+__Note:__ in order to signup and login in to the application, 
 
