@@ -63,9 +63,11 @@ $ expo start
 ```
 scan the qr code with your mobile device to open the application. 
 
-__Note:__ In order to signup and login in to the application, 
+__Note:__ In order to signup and login in to the application, the _ip address_ used must be changed to the __user's__ _ip address_.
+This link can be located in the 
+Example: Default link for the 
 ```BASH
-  http://__172.20.10.3__:5000/login
+  http://172.20.10.3:5000/login
 ```
 
 
