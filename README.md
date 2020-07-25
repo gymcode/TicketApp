@@ -3,6 +3,11 @@
 
 __Note:__ the latest version of [node](https://nodejs.org/en/), [expo-cli](https://expo.io/), and expo client(Required on the mobile device)
 
+#### Separate repositories for server and client
+__[Client Repo]__(https://github.com/gymcode/ticketApp_client)
+
+__[Server Repo]__(https://github.com/gymcode/ticketApp_client)
+
 _TODOs_
 * Clone the project before proceeding. 
 * Must have a text editor preferrably Visual Studio(VS) code.
