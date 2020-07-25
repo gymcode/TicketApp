@@ -61,6 +61,11 @@ To do that we have to execute this command
 # to start up the client server
 $ expo start 
 ```
-scan the qr code with your mobile device to open the application
-__Note:__ in order to signup and login in to the application, 
+scan the qr code with your mobile device to open the application. 
+
+__Note:__ In order to signup and login in to the application, 
+```BASH
+  http://__172.20.10.3__:5000/login
+```
+
 
