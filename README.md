@@ -6,7 +6,7 @@ __Note:__ the latest version of [node](https://nodejs.org/en/), [expo-cli](https
 _TODOs_
 * Clone the project before proceeding. 
 * Must have a text editor preferrably Visual Studio(VS) code.
-* Both project must be open in separate VS code windows.
+* Both projects must be open in separate VS code windows.
 * [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) can be install to test backend apis.
 * The terminal must be used for all necesaary installations.
 ```BASH
@@ -55,7 +55,7 @@ Example: to get all the players; this can be done
 > localhost:5000/favteam/players
 
 ## Running the application
-since the backend is already runnning, we can now start up the client section 
+since the backend is already runnning, we can now start up the client section. 
 To do that we have to execute this command
 ```BASH
 # to start up the client server
