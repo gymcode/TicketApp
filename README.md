@@ -38,30 +38,12 @@ $ yarn
 ```
 
 ### Server Section
-Install node packages first(either using npm or yarn
-```BASH
-# to install all the packaged used for the application
-$ npm install
-```
-or to use yarn
-```BASH
-# to install all the packaged used for the application
-$ yarn
-```
-Apis can be tested using either postman or insomnia or any preferrable api tester but before the server must be started. 
-```BASH
-# to start the server
-$ nodemon index 
-```
-if __nodemon index__ does not work then nodemon has to be installed globally
-```BASH
-# to install nodemon 
-$ npm install -g nodemon
-```
+The server section has been depolyed to heroku 
+
 #### testing the apis
 Example: to get all the players; this can be done
 
-> localhost:5000/favteam/players
+> https://ticketappserver.herokuapp.com//favteam/players
 
 ## Running the application
 since the backend is already runnning, we can now start up the client section. 
@@ -72,18 +54,5 @@ $ expo start
 ```
 scan the qr code with your mobile device to open the application. 
 
-__Note:__ In order to signup and login using the application, the _ip address_ used must be changed to the __user's__ _ip address_.
-
-The link can be located in the directory: 
-> _TicketApp/ticketApp_client/screens/login/login.js/_ for __Login__ and _TicketApp/ticketApp_client/screens/signUp/signUp.js/_ for __Sign Up__
-
-Example: Default link for the Login is
-```BASH
-  http://172.20.10.3:5000/login
-```
-But it must be changed to 
-```BASH
-  http://{user's ip address}:5000/login
-```
 ## THanK YoU 👍👌
 
