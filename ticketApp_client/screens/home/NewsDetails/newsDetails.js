@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Text, StyleSheet, View, Image, Dimensions } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { TouchableOpacity, ScrollView } from "react-native-gesture-handler";
 import moment from "moment";
 
 import theme from "../../../utils/theme";
@@ -48,7 +48,10 @@ const NewsDetails = ({ navigation, route }) => {
       {/* Image container */}
       <Image style={styles.imageContainer} source={{ uri: urlToImage }} />
       {/* Article Container */}
-      <View style={styles.bodyContainer}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        style={styles.bodyContainer}
+      >
         <View style={styles.dateTime}>
           <Ionicons name="md-time" size={14} color="red" />
           <Text
@@ -66,7 +69,7 @@ const NewsDetails = ({ navigation, route }) => {
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.bodyText}>{content}</Text>
         <Text style={styles.author}>By: {author || "Unknown"}</Text>
-      </View>
+      </ScrollView>
     </View>
   );
 };
@@ -84,7 +87,7 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     width: winWidth,
-    height: windHeight / 2.3,
+    height: windHeight / 3,
   },
   bodyContainer: {
     width: winWidth,
@@ -101,6 +104,7 @@ const styles = StyleSheet.create({
     marginRight: 15,
     fontSize: 18,
     fontFamily: "TTCommons-Regular",
+    lineHeight: 25,
   },
   dateTime: {
     flexDirection: "row",

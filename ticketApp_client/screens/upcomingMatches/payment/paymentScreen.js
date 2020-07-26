@@ -1,8 +1,14 @@
 import React, { useState, useContext } from "react";
-import { View, Text, Modal, StyleSheet, Dimensions } from "react-native";
+import {
+  View,
+  Text,
+  Modal,
+  StyleSheet,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Constants from "expo-constants";
-import { TouchableOpacity } from "react-native-gesture-handler";
 import { Dropdown } from "react-native-material-dropdown";
 import Animation from "lottie-react-native";
 import { newsContext } from "../../../Main";
