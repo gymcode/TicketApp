@@ -2,6 +2,7 @@
 > This is a ticket application for purchasing ticket for matches.
 
 ## UI demo
+![Untitled](https://user-images.githubusercontent.com/39276273/88492284-7977ef00-cf5e-11ea-9ee5-dc823469ac15.jpg)
 
 
 __Note:__ the latest version of [node](https://nodejs.org/en/), [expo-cli](https://expo.io/), and expo client(Required on the mobile device)
