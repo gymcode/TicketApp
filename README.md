@@ -1,10 +1,7 @@
 # TicketApp
 > This is a ticket application for purchasing ticket for matches.
 
-![photo_2020-07-26_22-39-57](https://user-images.githubusercontent.com/42737537/88491363-2f146380-cf9a-11ea-80e8-438344a76b66.jpg)
-![photo_2020-07-26_22-41-34](https://user-images.githubusercontent.com/42737537/88491365-33d91780-cf9a-11ea-98a6-8144a6c67fd5.jpg)
-![photo_2020-07-26_22-41-36](https://user-images.githubusercontent.com/42737537/88491366-376c9e80-cf9a-11ea-8eeb-cebb7e7c6f3d.jpg)
-[]([](![photo_2020-07-26_22-41-43](https://user-images.githubusercontent.com/42737537/88491370-3d627f80-cf9a-11ea-80d5-a828e6e93d8f.jpg)))
+## UI demo
 
 
 __Note:__ the latest version of [node](https://nodejs.org/en/), [expo-cli](https://expo.io/), and expo client(Required on the mobile device)
