@@ -1,23 +1,23 @@
-import React, {  useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from "react";
 import {
   View,
   Text,
   StyleSheet,
   ActivityIndicator,
   RefreshControl,
-} from 'react-native';
+} from "react-native";
 import {
   ScrollView,
   FlatList,
   TouchableWithoutFeedback,
-} from 'react-native-gesture-handler';
-import { useIsFocused } from '@react-navigation/native';
-import FAB from 'react-native-fab';
-import { MaterialIcons } from '@expo/vector-icons';
+} from "react-native-gesture-handler";
+import { useIsFocused } from "@react-navigation/native";
+import FAB from "react-native-fab";
+import { MaterialIcons } from "@expo/vector-icons";
 
-import * as appConst from '../../config/Config';
-import NewsItems from '../../components/NewsItems';
-import theme from '../../utils/theme';
+import * as appConst from "../../config/Config";
+import NewsItems from "../../components/NewsItems";
+import theme from "../../utils/theme";
 
 const Home = ({ navigation }) => {
   const [loading, setLoading] = useState(false);
@@ -33,20 +33,20 @@ const Home = ({ navigation }) => {
   // get news feed data
   async function getData() {
     fetch(appConst.NEWS_URL)
-      .then(response => response.json())
-      .then(responseJson => {
+      .then((response) => response.json())
+      .then((responseJson) => {
         setNewsFeedList(responseJson.articles),
           setLoading(true),
           setResponseStatus(1);
       })
-      .catch(error => {
+      .catch((error) => {
         setResponseStatus(2);
       });
   }
 
   // wait function
   function wait(timeout) {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(resolve, timeout);
     });
   }
@@ -58,22 +58,20 @@ const Home = ({ navigation }) => {
     wait(1000).then(() => {
       setRefreshing(false);
       fetch(appConst.NEWS_URL)
-        .then(response => response.json())
-        .then(responseJson => {
+        .then((response) => response.json())
+        .then((responseJson) => {
           setNewsFeedList(responseJson.articles),
             setLoading(true),
             setResponseStatus(1);
-          
         })
-        .catch(error => {
-
+        .catch((error) => {
           setResponseStatus(2);
         });
     });
   }, [refreshing]);
 
   function onclickNews(item) {
-    navigation.navigate('News', { ...item });
+    navigation.navigate("News", { ...item });
   }
 
   let NewsFeed;
@@ -104,7 +102,8 @@ const Home = ({ navigation }) => {
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
         }
-        style={{ justifyContent: 'center', alignItems: 'center' }}>
+        style={{ justifyContent: "center", alignItems: "center" }}
+      >
         <Text>Unable to get news item, check your internet connection...</Text>
       </ScrollView>
     );
@@ -114,15 +113,15 @@ const Home = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.mainText}>
         Latest
-        <Text style={{ fontWeight: 'normal', fontFamily: 'AirbnbCereal-Book' }}>
-          {' '}
+        <Text style={{ fontWeight: "normal", fontFamily: "AirbnbCereal-Book" }}>
+          {" "}
           News
         </Text>
       </Text>
       {NewsFeed}
       <FAB
         style={{
-          position: 'absolute',
+          position: "absolute",
           width: 50,
           height: 50,
         }}
@@ -142,7 +141,7 @@ const styles = StyleSheet.create({
   },
   shadow: {
     backgroundColor: theme.COLORS.SECONDARY,
-    shadowColor: 'black',
+    shadowColor: "black",
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 6,
     shadowOpacity: 0.2,
@@ -155,8 +154,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 19,
     color: theme.COLORS.HEADER,
-    fontWeight: 'bold',
-    fontFamily: 'AirbnbCereal-Black',
+    fontWeight: "bold",
+    fontFamily: "AirbnbCereal-Black",
     marginLeft: 20,
   },
 });
