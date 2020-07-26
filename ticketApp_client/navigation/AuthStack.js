@@ -21,6 +21,13 @@ const AuthStack = () => {
         }}
       />
       {/* paper onboarding section  */}
+      {/* <Auth.Screen
+        name="Login"
+        component={PaperOnboard}
+        options={{
+          headerShown: false,
+        }}
+      /> */}
 
       <Auth.Screen
         name="Login"
