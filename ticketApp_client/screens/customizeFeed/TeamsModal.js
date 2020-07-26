@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, Modal, StyleSheet, Image } from "react-native";
+import { View, Text, Modal, StyleSheet, Image,TouchableOpacity } from "react-native";
 import Constants from "expo-constants";
-import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
+import { FlatList,  } from "react-native-gesture-handler";
 import { teams } from "../../data/data";
 import { Ionicons } from "@expo/vector-icons";
 

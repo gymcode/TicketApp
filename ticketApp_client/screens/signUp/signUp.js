@@ -32,7 +32,7 @@ const SignUp = ({ navigation }) => {
 
   const SignUp = () => {
     setIslogginIn(true);
-    fetch("http://172.20.10.3:5000/register", {
+    fetch("http://192.168.8.112:5000/register", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -130,19 +130,22 @@ const SignUp = ({ navigation }) => {
             source={load}
             autoPlay
             loop
-            style={{ height: height / 6, width: 120, marginLeft: 35 }}
+            style={{ height: height / 6, alignSelf: "center" }}
           />
-        ) : null}
+        ) : (
+          <TouchableOpacity
+            style={styles.new}
+            onPress={() => navigation.navigate("Login")}
+          >
+            <Text style={{ color: "#414959", fontSize: 13 }}>
+              Already have an account?
+              <Text style={{ fontWeight: "500", color: "#e9446a" }}>
+                Log in
+              </Text>
+            </Text>
+          </TouchableOpacity>
+        )}
         {/* Already have an account */}
-        <TouchableOpacity
-          style={styles.new}
-          onPress={() => navigation.navigate("Login")}
-        >
-          <Text style={{ color: "#414959", fontSize: 13 }}>
-            Already have an account?
-            <Text style={{ fontWeight: "500", color: "#e9446a" }}>Log in</Text>
-          </Text>
-        </TouchableOpacity>
       </KeyboardAvoidingView>
     </TouchableWithoutFeedback>
   );

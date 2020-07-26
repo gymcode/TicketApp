@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 1 },
     elevation: 5,
     margin: 11,
-    height: winHeight / 4,
+    height: winHeight / 3.5,
     borderRadius: 10,
   },
   overview: {
