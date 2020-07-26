@@ -1,59 +1,57 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
-import theme from '../utils/theme';
+import React from "react";
+import { View, Text, StyleSheet, Image } from "react-native";
+import theme from "../utils/theme";
 
 const Results = (props) => {
   return (
     <View>
       {/*Match results container  */}
-        <View style={styles.resultsContainer}>
-          <View
-            style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
-            {/* Home team logo */}
-            <Image style={styles.homeTeamLogo} source={props.homeTeamLogo} />
-            {/*Match date  */}
-            <View style={{ marginTop: -15 }}>
-              <Text
-                style={{
-                  color: '#FC1055',
-                  fontWeight: 'bold',
-                  fontSize: 15,
-                  fontFamily: 'TTCommons-BoldItalic',
-                  marginLeft: -5,
-                  marginBottom: 4,
-                }}>
-                {props.date}
-              </Text>
-              <Text
-                style={{
-                  marginLeft: 12,
-                  marginBottom: 4,
-                  fontSize: 12,
-                  fontWeight: 'bold',
-                }}>
-                GPL
-              </Text>
-              {/* Score container */}
-              <View style={styles.scoreContainer}>
-                <Text style={styles.scoreText}>{props.homeTeamScore}</Text>
-                <Text style={styles.scoreText}>-</Text>
-                <Text style={styles.scoreText}>{props.awayTeamScore}</Text>
-              </View>
-            </View>
-            {/* Away team logo */}
-            <Image style={styles.awayTeamLogo} source={props.awayTeamLogo} />
-          </View>
-          {/* Team name */}
-          <View style={styles.teamName}>
-            <Text style={{ fontWeight: 'bold' }}>{props.homeTeam}</Text>
+      <View style={styles.resultsContainer}>
+        <View style={{ flexDirection: "row", justifyContent: "space-evenly" }}>
+          {/* Home team logo */}
+          <Image style={styles.homeTeamLogo} source={props.homeTeamLogo} />
+          {/*Match date  */}
+          <View style={{ marginTop: -15 }}>
             <Text
-              style={styles.regulationTime}>
-              90+3
+              style={{
+                color: "#FC1055",
+                fontWeight: "bold",
+                fontSize: 15,
+                fontFamily: "TTCommons-BoldItalic",
+                marginLeft: -5,
+                marginBottom: 4,
+              }}
+            >
+              {props.date}
             </Text>
-            <Text style={{ fontWeight: 'bold' }}>{props.awayTeam}</Text>
+            <Text
+              style={{
+                marginLeft: 12,
+                marginBottom: 4,
+                fontSize: 12,
+                fontWeight: "bold",
+              }}
+            >
+              GPL
+            </Text>
+            {/* Score container */}
+            <View style={styles.scoreContainer}>
+              <Text style={styles.scoreText}>{props.homeTeamScore}</Text>
+              <Text style={styles.scoreText}>-</Text>
+              <Text style={styles.scoreText}>{props.awayTeamScore}</Text>
+            </View>
           </View>
+          {/* Away team logo */}
+          <Image style={styles.awayTeamLogo} source={props.awayTeamLogo} />
         </View>
-   </View>     
+        {/* Team name */}
+        <View style={styles.teamName}>
+          <Text style={{ fontWeight: "bold" }}>{props.homeTeam}</Text>
+          <Text style={styles.regulationTime}>90+3</Text>
+          <Text style={{ fontWeight: "bold" }}>{props.awayTeam}</Text>
+        </View>
+      </View>
+    </View>
   );
 };
 
@@ -71,15 +69,15 @@ const styles = StyleSheet.create({
   scoreContainer: {
     width: 50,
     height: 25,
-    backgroundColor: '#430db6',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
+    backgroundColor: "#430db6",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
   },
   scoreText: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 18,
-    color: 'white',
+    color: "white",
   },
   awayTeamLogo: {
     width: 50,
@@ -87,15 +85,15 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   regulationTime: {
-    color: 'grey',
-    fontWeight: 'bold',
+    color: "grey",
+    fontWeight: "bold",
     fontSize: 12,
   },
   teamName: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    flexDirection: "row",
+    justifyContent: "space-evenly",
     paddingVertical: 10,
-    fontFamily: 'AirbnbCereal-Bold'
+    fontFamily: "AirbnbCereal-Bold",
   },
 });
 export default Results;
