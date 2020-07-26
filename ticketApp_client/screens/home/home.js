@@ -18,6 +18,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import * as appConst from "../../config/Config";
 import NewsItems from "../../components/NewsItems";
 import theme from "../../utils/theme";
+import LoadingNews from "../../components/LoadingNews";
 
 const Home = ({ navigation }) => {
   const [loading, setLoading] = useState(false);
@@ -76,11 +77,7 @@ const Home = ({ navigation }) => {
 
   let NewsFeed;
   if (responseStatus === 0) {
-    NewsFeed = (
-      <View>
-        <ActivityIndicator size="small" />
-      </View>
-    );
+    NewsFeed = <LoadingNews />;
   } else if (responseStatus === 1) {
     NewsFeed = (
       <FlatList
