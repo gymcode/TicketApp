@@ -1,5 +1,7 @@
 import React from 'react';
-import PaperOnboarding from '@gorhom/paper-onboarding';
+import {View, Text} from 'react-native'
+// import PaperOnboarding from '@gorhom/paper-onboarding';
+import PaperOnboarding from '@gorhom/paper-onboarding'
 
 
 const data  = [
@@ -23,17 +25,20 @@ const data  = [
     },
   ]
 
-export default function Onboarding({navigation}){
+  const PaperOnboard = ()=>{
+      //function declaration
+      function handlebtn(){
+          navigation.navigate('Login')
+      }
 
-    const handleBtn = () => {
-        navigation.navigate('Login')
-    }
-    return(
-     <PaperOnboarding 
-      data={data}
-      indicatorSize={25}
-      closeButtonText='Next'
-      onCloseButtonPress={handleBtn}
-    />
-    )
-}
+      return(
+        <PaperOnboarding 
+              data={data}
+              indicatorSize={25}
+              closeButtonText='Next'
+              onCloseButtonPress={handlebtn}
+            />
+      )
+  }
+
+  export default PaperOnboard

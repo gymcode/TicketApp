@@ -32,7 +32,7 @@ const SignUp = ({ navigation }) => {
 
   const SignUp = () => {
     setIslogginIn(true);
-    fetch("http://192.168.8.112:5000/register", {
+    fetch("https://ticketappserver.herokuapp.com/register", {
       method: "POST",
       headers: {
         Accept: "application/json",

@@ -31,7 +31,7 @@ const Login = ({ navigation, error }) => {
   const login = () => {
     setIslogginIn(true);
     //fetching now
-    fetch("http://192.168.8.112:5000/login", {
+    fetch("https://ticketappserver.herokuapp.com/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
