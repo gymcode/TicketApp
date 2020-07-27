@@ -5,6 +5,7 @@ import WelcomeScreen from "../screens/welcome/welcomeScreen";
 import LoginScreen from "../screens/login/login";
 import ResetPassword from "../screens/resetPassword/ResetPasswordScreen";
 import SignUp from "../screens/signUp/signUp";
+import PaperOnboard from '../screens/welcome/paperOnboarding';
 import customizeFeed from "../screens/customizeFeed/customizeFeedScreen";
 
 const Auth = createStackNavigator();
@@ -19,6 +20,8 @@ const AuthStack = () => {
           headerShown: false,
         }}
       />
+      {/* paper onboarding section  */}
+
       <Auth.Screen
         name="Login"
         component={LoginScreen}
